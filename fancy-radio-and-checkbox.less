@@ -1,0 +1,34 @@
+/* ==================================== ==================================== ==================================== *
+ *                                          FANCY_RADIOS_&_CHECKBOXES
+ *  						                    author: Carl Lutz
+ * ==================================== ==================================== ==================================== */
+
+input[type="radio"].fancy-radio-btn,
+input[type="checkbox"].fancy-check-btn { 
+	visibility: hidden;
+	display: none !important;
+}
+
+/* sets the unchecked button color */
+input[type="radio"].fancy-radio-btn + label,
+input[type="checkbox"].fancy-check-btn + label {
+	.btn;
+}
+
+/* sets the checked button color */
+input[type="radio"].fancy-radio-btn:checked + label,
+input[type="checkbox"].fancy-check-btn:checked + label {
+	.btn-info;
+}
+
+/* sets the hover button color */
+input[type="radio"].fancy-radio-btn + label:hover,
+input[type="checkbox"].fancy-check-btn + label:hover {
+	.btn-warning;
+}
+
+/* sets the hover checked button color */
+input[type="radio"].fancy-radio-btn:checked + label:hover,
+input[type="checkbox"].fancy-check-btn:checked + label:hover {
+	/* add a bootstrap button class here for a different hover color when checked */
+}
